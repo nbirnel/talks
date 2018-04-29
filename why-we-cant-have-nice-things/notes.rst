@@ -64,10 +64,10 @@ The 3 Cs
   - honesty
   - customer oriented
   - show you are not a crow
-    . bring a POC
-    . bring value
-    . We need it for a stack we are already using
-    . the time it took me to learn this has already been paid off
+    + bring a POC
+    + bring value
+    + We need it for a stack we are already using
+    + the time it took me to learn this has already been paid off
 * conspiracy (careful with this)
 * the 4th C, kindness
 
