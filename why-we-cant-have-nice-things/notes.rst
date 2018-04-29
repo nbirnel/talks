@@ -12,22 +12,13 @@ Who I am
 | Lighthouse Systems Engineer
 | Coalfire
 
+
 The usual disclaimers
 
 | nbirnel at gmail dot com
 | noah.birnel at coalfire dot com
 | twitter: NoahBirnel
 | github: nbirnel
-| Line blocks are useful for addresses,
-| verse, and adornment-free lists.
-
-| Each new line begins with a
-| vertical bar ("|").
-|     Line breaks and initial indents
-|     are preserved.
-| Continuation lines are wrapped
-  portions of long lines; they begin
-  with spaces in place of vertical bars.
 
 Intro
 -----
