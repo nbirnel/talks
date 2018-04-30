@@ -40,6 +40,8 @@ How do you decide
   - version control (lots of vc)
   - documentation (and vc) (and onboarding)
   - configuration management
+  - checklists
+  - What are yours?
 * costs and benefits
 * dependancies (graph them!)
 * how mature do you need to be?
@@ -64,7 +66,7 @@ The 3 Cs
   - Be really good at your job. Sadly, this is not an option.
   - honesty
   - customer oriented
-  - show you are not a crow
+  - show you are not a collector
     + bring a POC
     + bring value
     + We need it for a stack we are already using
@@ -83,8 +85,8 @@ Two hard problems
 * Diversity
 * Ethics
 
-Start where you are
--------------------
+Start where you are, Use what you have, Do what you can
+-------------------------------------------------------
 
 `feh -F --auto-rotate start.jpg`
 
