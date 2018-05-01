@@ -8,6 +8,8 @@ Given:
 
 https://linuxfestnorthwest.org/conferences/lfnw18/program/proposals/9
 
+https://www.youtube.com/watch?v=i_eRy_T3MjA
+
 Errata
 ------
 
