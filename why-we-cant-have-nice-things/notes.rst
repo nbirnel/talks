@@ -25,6 +25,8 @@ Intro
 
 Recap the proposal.
 
+This is for developers, for admins, for IT, for Help Desk.
+
 This is a virtuous cycle.
 
 Why do we need these things?
@@ -60,8 +62,10 @@ The 3 Cs
 * costs and values
   - Time, equipment, licenses, ongoing costs: present these.
     Let your manager figure out where in the budget these would go.
+  - These are the same costs and values as you measured before, 
+    but you need a different emphasis.
   - Stories
-  - BTW, You *are* a customer. Just not an important one.
+  - You *are* a customer. Just not an important one.
 * credibility (where do you get it?)
   - Be really good at your job. Sadly, this is not an option.
   - honesty

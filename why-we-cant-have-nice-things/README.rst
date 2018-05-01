@@ -15,6 +15,15 @@ Errata
 
 * Oh no, I displayed the wrong Twitter handle during the talk.
 
+Lessons Learned
+---------------
+
+* Stop saying "um".
+* Slides, for the video watchers
+* Repeat audience questions, for the video watchers
+* Louder
+* Leave more for Q&A (33%?)
+
 Bibliography
 ============
 
