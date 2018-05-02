@@ -27,7 +27,7 @@ Lessons Learned
 Bibliography
 ============
 
-* Sam Harris *On Lying* -- Harris claims that being honest **all of the time**
+* Sam Harris *Lying* ISBN-10: 1940051002 -- Harris claims that being honest **all of the time**
   is a practical and wise policy. Please note that Harris' thesis here does not
   depend on any of his other unpopular opinions.
 * Robert "Uncle Bob" Martin *Expecting Professionalism* 
@@ -44,3 +44,6 @@ Bibliography
   + Diploma nurses: 17.7 
   + BSN: 10.9
   + ADN-prepared: 9.5
+* Atul Gawande *The Checklist Manifesto* ISBN-10: 0312430000 -- Gawande, 
+  a surgeon, argues that even the most skilled professionals can make good use
+  of checklists.
