@@ -1,0 +1,56 @@
+mkdir puppy
+cd puppy
+git init
+
+mkdir test
+echo '#!/bin/sh
+
+./puppy | grep -e puppy -e puppies' >test/has_puppy
+chmod 755 test/has_puppy
+
+./test/has_puppy && echo 'good'
+
+git add test/has_puppy
+git commit -m 'add test for puppy'
+
+echo '#!/bin/sh
+
+echo puppy' >puppy
+chmod 755 puppy
+
+./test/has_puppy && echo 'good'
+
+git add puppy
+git commit -m'initial commit'
+
+git tag 1.0
+
+../make-bug
+
+echo '#!/bin/sh
+
+./puppy | grep "dead pupp"
+if [ $? -eq 0 ]; then
+    false
+else
+    true
+fi' >test/no_dead_puppies
+chmod 755 test/no_dead_puppies
+./test/no_dead_puppies && echo 'good'
+
+# skip this stanza if pressed for time
+git bisect start
+git bisect bad
+git bisect good 1.0
+git bisect reset
+
+git bisect start HEAD 1.0
+git bisect run test/no_dead_puppies
+
+git diff <bad-commit>^ <bad-commit>
+
+git bisect reset
+vim puppy
+git add puppy
+git add test/no_dead_puppies
+git commit -m'fix dead puppy'

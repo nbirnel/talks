@@ -1,0 +1,6 @@
+# vim set ft=sls 
+
+auditd-package:
+  pkg:
+    - installed
+    - name: {{ pillar['pkgs']['auditd'] }}

@@ -1,0 +1,34 @@
+#Navigate to lightning-talks
+git clone http://github.com/nbirnel/lightning-talks 
+cd lightning-talks
+vim README.md
+#Some short talks I have given
+#=============================
+#:wq
+git status
+vim notes
+git status
+git add README.md
+git status
+git commit 
+git push origin master
+#Show that notes did not get pushed
+
+#30
+git remote -v
+git branch
+git branch add better_readme
+git checkout better_readme
+vim README.md
+git diff
+git add .           #Naughty
+git commit -a       #Naughty
+git rm notes        #and see git mv
+git commit -a
+git checkout master
+git merge better_readme
+git tag 'vcwg-first'
+git push origin master
+git log
+git log --decorate --graph --color
+

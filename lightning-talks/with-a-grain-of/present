@@ -1,0 +1,3 @@
+#!/bin/sh
+
+vim -c 'nnoremap p :N<cr>' -c 'nnoremap n :n<cr>' ??

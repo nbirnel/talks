@@ -1,0 +1,86 @@
+CONTRIBUTING TO OPEN SOURCE IN IGNORANCE AND DESPERATION
+=====================
+
+I've been using open source software for....
+
+never mind
+
+TCP/IP stack (MS uses BSD's)
+the interwebs - BIND, LAMP
+OS X (kernel originated in FreeBSD; has parts of GNU userland)
+Android (linux kernel)
+
+15 years (consciously)
+
+2 years contributing
+
+'Maintained' - what does it mean?
+=====================
+
+commercial:
+  'When you change the insides, nobody notices'
+  http://blogs.msdn.com/b/oldnewthing/archive/2004/05/25/141253.aspx
+
+oss:
+  "It's done"
+  Jon 'maddog' hall
+  Watch open PR's, not activity. (nawk vs gawk)
+
+What do I get out of it?
+=====================
+
+what do I put in?
+
+*money!*
+(or supplies)
+  you get a book (ssh book for OpenBSD)
+  you get a vote (synergy)
+  you get support (synergy, pdftk)
+
+but...
+
+complexity
+design for amateurs / CTO's
+deliberate bugs
+change rather than refinement
+
+*bug reports
+  maybe the bug gets fixed
+  maybe you get support (pdftk offered to run a large job for me)
+  maybe you get a workaround (synergy gave me undocumented command line flags)
+
+*documentation
+  it's there the next time you need it
+  maybe the developer will be more receptive to your gripes after you have 
+    contributed
+
+*code*
+(but I don't know what I'm doing!)
+
+I DON'T KNOW C
+
+feh - giblib won't compile on cygwin, but there is year-old discussion of 
+        importing it
+      "That's a low priority"
+      refused to merge my brute force fix,
+      but then did the work better himself a week later
+      You can embarrass developers into doing work you want done!
+
+feh (again) - progress bars print to STDOUT, which is just wrong.
+              just went through and switched to STDERR as appropriate
+              merged
+
+YOU GET WORKING CODE
+
+afterword - Why git rocks so much for amateurs like me
+=====================
+cheap forks - anyone can play
+cheap merges - it is easy to play
+git log & github - it is easier to see the difference between stagnation and 
+  perfection
+
+END
+This document is available as part of:
+https://github.com/nbirnel/lightning-talks
+LICENSE:
+Share and enjoy.

@@ -1,0 +1,2 @@
+
+salt 'some-minion' cmd.run 'ifconfig'

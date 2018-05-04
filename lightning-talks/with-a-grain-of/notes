@@ -1,0 +1,107 @@
+Noah Birnel
+Scan Support Engineer
+noah.birnel@coalfire.com
+nbirnel@gmail.com
+https://github.com/nbirnel
+
+who is not using salt?
+
+This is a story, not a demo or a tutorial.
+And I would love answers to the various complaints and concerns I raise.
+
+1.
+=====================
+as a beginner
+
+Had looked at Chef, Puppet, CFengine for managing Windows VM's about 3 years
+ago. Not gotten around to using them.
+
+salt '*' test.ping
+
+salt 'some-minion' cmd.run 'ifconfig'
+
+auditd-package:
+  pkg:
+    - installed
+    {% if 'BE' in salt['grains.get']('role', ()) or 'SE' in salt['grains.get']('role', ()) or 'PT' in salt['grains.get']('role', ()) %}
+    - name: auditd
+    {% elif 'LH' in salt['grains.get']('role', ()) %}
+    - name: audit
+    {% endif %}
+
+pkgs:
+  {% if grains['os_family'] == 'RedHat' %}
+  apache: httpd
+  auditd: audit
+  nexpose: NexposeEngine
+  rsyslog: rsyslog5
+  ssh_client: openssh-clients
+  {% elif grains['os_family'] == 'Debian' %}
+  apache: apache2
+  auditd: auditd
+  nexpose: nexpose
+  rsyslog: rsyslog
+  ssh_client: openssh-client
+  {% endif %}
+ 
+auditd-package:
+  pkg:
+    - installed
+    - name: {{ pillar['pkgs']['auditd'] }}
+
+{% set auditd = salt['grains.filter_by']({
+  'RedHat': { 'package': 'audit' },
+  'Debian': { 'package': 'auditd' },
+}) %}
+
+auditd-package:
+  pkg:
+    - installed
+    - name: {{ auditd.package }}
+
+This is not mentioned by (they use the same dictionary technique,
+but in a separate map.jina, which is then merged with pillar data)
+
+http://docs.saltstack.com/en/latest/topics/best_practices.html
+
+2.
+=====================
+root
+
+root@someserver:/root# salt '*' state.sls break.the_world
+
+Yes on minion, but on master? Not required, but then I have to have another
+layer of who's authorized for what beyond /etc/shadow, selinux, ACLs, 
+
+3.
+=====================
+*nix-ey?
+
+Silence == ?
+
+salt-run jobs.active
+salt \* saltutil.find_job <jobid>
+salt \* saltutil.find_cached_job <jobid>
+
+4.
+=====================
+man salt
+SEE ALSO
+       salt(7) salt-master(1) salt-minion(1)
+
+salt \* sys.doc 
+salt-run
+salt-call
+salt-key
+
+5.
+=====================
+a working filesystem?!?!
+
+6.
+=====================
+/srv/salt/_modules
+
+7.
+=====================
+$$$

@@ -1,0 +1,45 @@
+What's git?
+===========
+Version control system
+Distributed
+multi-protocol
+Cryptographically secure hashes (later!)
+Easy forking, easy merging
+Open source, and free as in beer
+Not Github
+
+Version Control means never having to say you're sorry 
+  lose, revert, find & fix bugs
+How I learned to stop worrying and nuked my server
+  distributed means you don't need a server
+  everyone has their own full complete copy of the whole repo
+  You can have a server
+  You can use github
+  You can just rely on lots replicated repos (linux)
+Pick a protocol, any protocol
+  http
+  https
+  git
+  filesystem
+  torrent
+Stop rewriting history
+  Each commit is hashed, and named by that hash 
+  Each copy of the repo has it's full history.
+  If what's in the repo doesn't match the hash, we know something is wrong
+Easy forking, easy merging = Easy contribution
+  (This is partially a feature of github)
+  Thousands of developers on saltstack, not centrally coordinated
+Don't fear the future
+  OS (and popular) means - it won't be retracted
+                           it will keep being maintained
+                           it get's ported
+git != github
+  github provides free (and paid) git serving. 
+  They are not behind git. 
+  Linus Torvalds started git. There is a git repo on github,
+    but it is not where Linus does his merges.
+
+
+
+
+

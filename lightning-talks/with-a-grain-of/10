@@ -1,0 +1,2 @@
+
+root@someserver:/root# salt '*' state.sls break.the_world

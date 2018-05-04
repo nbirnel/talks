@@ -1,0 +1,10 @@
+# vim set ft=sls 
+
+auditd-package:
+  pkg:
+    - installed
+    {% if 'BE' in salt['grains.get']('role', ()) or 'SE' in salt['grains.get']('role', ()) or 'PT' in salt['grains.get']('role', ()) %}
+    - name: auditd
+    {% elif 'LH' in salt['grains.get']('role', ()) %}
+    - name: audit
+    {% endif %}

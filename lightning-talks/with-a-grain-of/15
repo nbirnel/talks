@@ -1,0 +1,5 @@
+
+salt \* sys.doc 
+salt-run
+salt-call
+salt-key

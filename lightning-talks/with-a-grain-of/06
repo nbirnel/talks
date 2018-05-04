@@ -1,0 +1,16 @@
+# vim set ft=sls 
+
+pkgs:
+  {% if grains['os_family'] == 'RedHat' %}
+  apache: httpd
+  auditd: audit
+  nexpose: NexposeEngine
+  rsyslog: rsyslog5
+  ssh_client: openssh-clients
+  {% elif grains['os_family'] == 'Debian' %}
+  apache: apache2
+  auditd: auditd
+  nexpose: nexpose
+  rsyslog: rsyslog
+  ssh_client: openssh-client
+  {% endif %}

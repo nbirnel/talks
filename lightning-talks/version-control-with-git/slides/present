@@ -1,0 +1,3 @@
+#!/bin/sh
+
+vim -c 'set nonumber' -c 'set norelativenumber' -c 'set nocursorline' -c 'set colorcolumn=0' -c 'set ft=markdown' -c 'nnoremap p :N<cr>' -c 'nnoremap n :n<cr>' ??-*

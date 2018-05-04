@@ -1,0 +1,11 @@
+# vim set ft=sls 
+
+{% set auditd = salt['grains.filter_by']({
+  'RedHat': { 'package': 'audit' },
+  'Debian': { 'package': 'auditd' },
+}) %}
+
+auditd-package:
+  pkg:
+    - installed
+    - name: {{ auditd.package }}
